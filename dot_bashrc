@@ -122,7 +122,7 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$PATH:~/bin"
 
 # Set $EDITOR env variable
-export EDITOR=/opt/nvim-linux64/bin/nvim
+export EDITOR=/bin/nvim
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
