@@ -1,3 +1,4 @@
 alias otel='cd ~/projects/otel'
 alias srcb='source ~/.bashrc'
 alias fd='fdfind'
+alias catb=batcat
