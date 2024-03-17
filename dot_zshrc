@@ -99,3 +99,14 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Bash aliases TODO: Perhaps it should be changed to be handled by .profile
+
+if [ -f ~/.bash_aliases ]; then
+        . ~/.bash_aliases
+fi
+
+# Add bob nvim and respective NVIM env variable
+export PATH="$PATH:$HOME/.local/share/bob/nvim-bin"
+
+export EDITOR=$(which nvim)

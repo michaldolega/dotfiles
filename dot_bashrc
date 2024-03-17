@@ -115,11 +115,6 @@ if ! shopt -oq posix; then
 	fi
 fi
 
-# Add neovim to path
-export PATH="$PATH:/opt/nvim-linux64/bin"
-
-# Add user .bin to path cause chezmoi is installed there TODO: I should change that
-export PATH="$PATH:~/bin"
 # Add bob dnvim
 export PATH="$PATH:$HOME/.local/share/bob/nvim-bin"
 
