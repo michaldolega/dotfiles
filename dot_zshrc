@@ -115,7 +115,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # Add bob nvim and respective NVIM env variable
-export PATH="$PATH:$HOME/.local/share/bob/nvim-bin"
+export PATH="$PATH:$HOME/.local/share/bob/nvim-bin:$HOME/.local/bin"
 
 export EDITOR=$(which nvim)
 
@@ -126,4 +126,6 @@ cd ~
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+
+eval "$(zoxide init zsh)"
